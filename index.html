@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="img-container" data-carousel>
+      Dishes In Bangkok Must Eat!
+      <button class="carousel-button previous" data-carousel-button="previous">
+        &#8592;
+      </button>
+      <button class="carousel-button next" data-carousel-button="next">
+        &#8594;
+      </button>
+      <div class="carousel" data-slides>
+        <div id="slide1" class="slide" data-active>
+          <img src="img/pratuphipadthai.jpeg" />
+        </div>
+        <div id="slide2" class="slide">
+          <img src="img/sombooncurycrab.jpeg" />
+        </div>
+        <div id="slide3" class="slide">
+          <img src="img/somtumnua.jpeg" />
+        </div>
+        <div id="slide4" class="slide">
+          <img src="img/sukiduck.jpeg" />
+        </div>
+        <div id="slide5" class="slide">
+          <img src="img/thaiteacrepecake.jpeg" />
+        </div>
+      </div>
+    </div>
+    <div class="navigation-dots">
+      <div onclick="dotNav(this)" class="dot active" id="dot1"></div>
+      <div onclick="dotNav(this)" class="dot" id="dot2"></div>
+      <div onclick="dotNav(this)" class="dot" id="dot3"></div>
+      <div onclick="dotNav(this)" class="dot" id="dot4"></div>
+      <div onclick="dotNav(this)" class="dot" id="dot5"></div>
+    </div>
+  </body>
+</html>
