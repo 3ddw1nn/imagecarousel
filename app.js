@@ -3,13 +3,11 @@ const slidesArray = document.querySelectorAll(".slide");
 const allDots = document.querySelectorAll(".dot");
 
 const firstDot = document.querySelector("#firstDot");
-// let initialSlide = document.querySelector("[data-active]");
 
-// ScrollAuto();
+ScrollAuto();
 buttons.forEach((eachButton) => {
   eachButton.addEventListener("click", () => {
     let currentSlide = "";
-    // let initialSlide = ""
     const repeat = eachButton.dataset.carouselButton === "next" ? 1 : -1;
     const slides = eachButton
       .closest("[data-carousel]")
