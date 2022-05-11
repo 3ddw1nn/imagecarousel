@@ -18,29 +18,34 @@
         &#8594;
       </button>
       <div class="carousel" data-slides>
-        <div id="slide1" class="slide" data-active>
+        <div id="0" class="slide" data-active>
           <img src="img/pratuphipadthai.jpeg" />
         </div>
-        <div id="slide2" class="slide">
+        <div id="1" class="slide">
           <img src="img/sombooncurycrab.jpeg" />
         </div>
-        <div id="slide3" class="slide">
+        <div id="2" class="slide">
           <img src="img/somtumnua.jpeg" />
         </div>
-        <div id="slide4" class="slide">
+        <div id="3" class="slide">
           <img src="img/sukiduck.jpeg" />
         </div>
-        <div id="slide5" class="slide">
+        <div id="4" class="slide">
           <img src="img/thaiteacrepecake.jpeg" />
         </div>
       </div>
     </div>
     <div class="navigation-dots">
-      <div onclick="dotNav(this)" class="dot active" id="dot1"></div>
-      <div onclick="dotNav(this)" class="dot" id="dot2"></div>
-      <div onclick="dotNav(this)" class="dot" id="dot3"></div>
-      <div onclick="dotNav(this)" class="dot" id="dot4"></div>
-      <div onclick="dotNav(this)" class="dot" id="dot5"></div>
+      <div
+        onclick="dotNav(this)"
+        class="dot active"
+        data-id="0"
+        id="firstDot"
+      ></div>
+      <div onclick="dotNav(this)" class="dot" data-id="1"></div>
+      <div onclick="dotNav(this)" class="dot" data-id="2"></div>
+      <div onclick="dotNav(this)" class="dot" data-id="3"></div>
+      <div onclick="dotNav(this)" class="dot" data-id="4"></div>
     </div>
   </body>
 </html>
